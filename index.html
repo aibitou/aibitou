@@ -1,32 +1,120 @@
 <!DOCTYPE html>
 <html>
 <head>
-<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
-<title>爱笔头</title>
-<meta name="keywords" content="爱笔头">
-<meta name="description" content="爱笔头，分享快乐的平台，微信公众号：aibitou">
+<meta charset="UTF-8">
+<meta content="aibitou.com" name="author">
+<title>爱笔头(aibitou.com) - 个性化导航网站、精品网站推荐</title>
+<meta name="keyword" content="爱笔头(aibitou.com)，网站、导航、个性化">
+<meta name="description" content="爱笔头(aibitou.com)，无广告的个人网站，精品网站推荐，体育赛事">
 <link rel="shortcut icon" href="images/favicon.ico" />
-<script type="text/javascript" src="js/jquery-1.10.2.min.js"></script>
-<script type="text/javascript" src="js/style.js"></script>
-<link rel="stylesheet" type="text/css" href="css/style.css" />
+<link rel="stylesheet" href="css/style.css" type="text/css" />
 </head>
-
 <body>
-<div class="main" id="main">
-	<div class="mainnav">
-		<ul class="navbar">
-			<li id="us"><a href="http://aibitou.duapp.com/">回到博客</a></li>
-			<li id="culture"><a href="">文化</a></li>
-			<li id=""><a href="">联系</a></li>
-			<li id=""><a href="">合作</a></li>
-		</ul>
+<div class="main">
+	<div class="main-head">
+		<div class="wrap">
+			<div class="logo">
+				<span><a href="http://www.aibitou.com">爱笔头</a></span>
+			</div>
+			<div class="navbar">
+			    <ul>
+			        <li><a href="http://aibitou.duapp.com" target="_blank">爱笔头导航</a></li>
+			        <li><a href="http://aibitou.diandian.com" target="_blank">博客</a></li>
+			    </ul>
+			</div>
+		</div>
 	</div>
-	<div class="content">
-		<img src="images/1.jpg" />
+	<div class="blank"></div>
+	<div class="main-content wrap">
+		<div id="kinMaxShow">
+		  	<div>
+		    	<a><img src="images/default/1.png" /></a>
+		    </div>       	     
+		</div>
 	</div>
 </div>
-<div class="menu" id="menu">
+<div class="blank"></div>
+<div class="box">
+	<ul class="box-list">
+		<li>
+			<span>
+				<div class="toll_img">
+					<div class="list-title">爱笔头导航</div>
+					<img src="images/aibitou.png" />
+				</div>
+				<div class="toll_info">
+					<a href="http://aibitou.duapp.com" target="_blank">
+					<p>爱笔头导航，爱笔头旗下一个专属的个性化导航网站、精品网站推荐</p></a>
+				</div>
+			</span>
+		</li>
+		<li>
+			<span>
+				<div class="toll_img">
+					<div class="list-title">虎嗅网</div>
+					<img src="images/huxiu.png" />
+				</div>
+				<div class="toll_info">
+					<a href="http://www.huxiu.com/" target="_blank">
+					<p>虎嗅网，是一个用户可参与的商业资讯与观点交流平台。</p></a>
+				</div>
+			</span>
+		</li>
+		<li>
+			<span>
+				<div class="toll_img" style="background: #000;">
+					<div class="list-title">Techmeme</div>
+					<img src="images/techmeme.png" />
+				</div>
+				<div class="toll_info">
+					<a  href="http://www.techmeme.com/" target="_blank">
+					<p>Techmeme，一个科技新闻聚合的网站。</p></a>
+				</div>
+			</span>
+		</li>
+		<li>
+			<span>
+				<div class="toll_img">
+					<div class="list-title">网页设计师联盟</div>
+					<img src="images/68design.png" />
+				</div>
+				<div class="toll_info">
+					<a href="http://www.68design.net/" target="_blank">
+					<p>网页设计师联盟，——网站设计行业第一垂直门户。</p></a>
+				</div>
+			</span>
+		</li>			
+	</ul>
 </div>
+<div class="footer">
+	<div class="footer-wrap">	
+  		© 2014 <a>aibitou.com</a> All Rights Reserved
+	</div>
+</div>	
+<script type="text/javascript" src="js/jquery-1.10.2.min.js" ></script>
+<script type="text/javascript" src="js/jquery.kinMaxShow-1.0.min.js" ></script>
+<script type="text/javascript" src="js/jquery.kinMaxShow-1.0.src.js" ></script>
+<script type="text/javascript">
+$(document).ready(function(){
+	$('.box-list span').mouseover(function(){
+		$(this).stop().animate({"top":"-140px"}, 200); 
+	})
+	$('.box-list span').mouseout(function(){
+		$(this).stop().animate({"top":"0"}, 200); 
+	})
+});
+</script>
+<script type="text/javascript">
+$(document).ready(function(){
+	$('.box a').mouseover(function(){
+		$(this).stop().animate({"top":"-180px"}, 200); 
+	})
+	$('.box a').mouseout(function(){
+		$(this).stop().animate({"top":"0"}, 200); 
+	})
+	$("#kinMaxShow").kinMaxShow();
+});
+</script>
 </body>
 </html>
 

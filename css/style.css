@@ -1,18 +1,119 @@
-* { margin:0; padding:0;}
-body { margin: 0; padding: 0; }
-.main { width: 100%; height: 100%; background: #fbfaf8; }
-.mainnav { height: 100px; border-bottom: 1px solid #f1f1f1; position: absolute; top: 0; left: 20%; right: auto; bottom: auto; }
-.mainnav ul, li { list-style: none; }
-.mainnav li { display: inline-block; width: 200px; text-align: center; line-height: 100px;}
-.mainnav li a { text-decoration: none; display: block;}
+* { margin: 0; padding: 0;}
+body {
+	font-family: "Microsoft Yahei";
+	font-size: 12px;
+}
+.main {
+	background:url(images/body.jpg);
+	background-repeat:no-repeat;
+	background-position:center;
+	background-attachment:fixed;
+	padding-bottom: 40px;
+}
+.main .main-head {
+    position: relative;
+	height: 68px;
+	margin: 0 auto;
+    background: #FAFBF8;
+    border-top: 3px solid #FF0000;
+}
+.main-head .logo {
+    float: left;
+	width: 114px;
+    height: 48px;
+	padding: 10px 10px;
+	font-family: 楷体;
+	font-size: 38px;
+	color: #FFFFFF;
+	background: #FF0000;
+	z-index:100;
+}
+a {
+    text-decoration: none;
+    color: #FFFFFF;
+}
+.main .main-content {
+/*	position: relative;
+	width: 1000px;
+	bottom: 0px;
+	top: 0px;
+	background: rgba(250, 251, 248, 0.5);
+	margin:20px auto 0px;
+	padding-top: 20px;
+	border-radius: 8px;*/
+	height: 360px;
+}
+#kinMaxShow { visibility: hidden; width: 100%; height:500px; overflow: hidden;}
+.main-content .content-l {
+	float: left;
+	width: 200px;
+	margin: 0px 40px; 
+}
+.main-content .content-r {
+	float: left;
+	font-size: 20px;
+}
 
-.menu { width: 40px; height: 100%; position: fixed; left: 0; top: 0; background: #666; }
+.box {width: 1000px; height: 180px; margin: 0px auto;}
+.box-list img {width: 240px; height: 140px;}
+.navbar li { 
+    list-style: none;
+    display: block;
+    width: 100px;
+    height: 28px;
+    margin-bottom: 0px;
+    margin-left: 20px;
+    border-radius: 20px;
+    background: #FF0000;
+    color: #FFFFFF;
+    float:left;
+    line-height: 28px;
+    text-align: center;
+    font-size: 16px;
+}
+.box-list li{ border-radius: 8px; width:240px; height:140px; margin-right: 10px; float:left; overflow:hidden; position:relative;}
+.box-list .toll_img { width:240px; height:140px; background: #FAFAF8;}
+.box-list .toll_img .list-title{width: 240px; color:#000; height:20px; font-size: 14px; line-height: 20px; text-align: center; position: absolute; top:0; left:0; z-index: 100px;}
+.box-list .toll_info { width:240px; height:140px; background: #FAFAF8; vertical-align: middle; display: table-cell;}
+.box-list p{ padding-left:10px; padding-right:10px; line-height: 20px;}
+.box-list a{ text-decoration: none;color: #000;}
+.box-list li span{ color:#666; position:absolute; top:0; left:0;}
 
-.content { position: absolute; top: 120px; left: 20%; width: 800px; display: none; }
-.content img{ width: 800px; height: 400px; }
+.footer {
+	position: relative;
+	bottom: 0px;
+	width: 1000px;
+	margin: 20px auto 9px;
+	border-top: 1px solid #AAAAAA; 
+}
+.footer .footer-wrap {
+	color: #AAAAAA;
+	height: 44px;
+	line-height: 44px;
+}
+.footer .footer-wrap a{
+	color: #AAAAAA;
+	text-decoration: none;
+}
+.main .main-head .navbar {
+    position: relative;
+    top: 40px;
+    float: right;
+    height: 28px;
+    margin: 0px;
+}
 
+.navbar ul {
+    list-style: none;
+}
 
-
-
-
-
+.wrap {
+    position: relative;
+    width: 1000px;
+    margin: 0 auto;
+}
+.blank {
+	position: relative;
+	height: 20px;
+	width: 100%;
+}
